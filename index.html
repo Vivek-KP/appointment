@@ -1,0 +1,60 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slot Booking</title>
+  <style>
+    #slot-widget {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 1%;
+      padding-right: 2%;
+      width: 300px;
+      font-family: Arial, sans-serif;
+    }
+    #slot-widget h3 {
+      margin: 0 0 16px;
+      text-align: center;
+    }
+    .slot-input input{
+        width: 100%;
+      margin: 8px 0;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    
+    }
+    #slot-widget select, #slot-widget button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    #slot-widget ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #slot-widget ul li {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div id="slot-widget"></div>
+  <script src="slot-widget.js"></script>
+  <script>
+    // Initialize the plugin
+    SlotWidget.init({
+      containerId: 'slot-widget',
+      apiUrl: 'http://127.0.0.1:5000/', 
+      bookingUrl: 'http://127.0.0.1:5000/' 
+    });
+  </script>
+</body>
+</html>
